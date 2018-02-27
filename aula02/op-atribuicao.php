@@ -3,7 +3,6 @@
 
 echo "<pre>";
 echo "<br>";
-+
 echo "<hr>";
 
 $a = 5;
