@@ -1,15 +1,20 @@
-<?php
-
-$nome = readline ("digite seu nome:");
-
+<?php 
+$nome = readline("Digite seu nome: ");
 switch ($nome) {
-	case 'Lucas':
-		echo "Oi Lucas";
-		break;
-	case 'Larissa':
-		echo "Oi Larissa";
-		break;
-	case 'Breno':
-		echo "Oi Breno";
-		break;
+  case 'Lucas':
+    echo "Eae Lucas";
+    break;
+  case 'Diego':
+    echo "Eae Diego";
+    break;
+  case 'Gustavo':
+    echo "Eae Gustavo";
+    break;
+  case 'Ze':
+    echo "Eae Ze";
+    break;
+  default:
+    echo "Eae Estranho";
+    break;
 }
+echo "\n";
