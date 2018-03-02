@@ -1,43 +1,42 @@
-<?php
 
-$idade = 15;
-$carteirinha = true;
-
-if(($idade>=18) && $carteirinha){
-	echo "Maior Idade e carteirinha";
-} else if ($carteirinha == false) {
-	echo "Maior Idade e sem carteirinha";
+<?php 
+echo "<pre>";
+// $idade = 19;
+// $carterinha = false;
+// if(($idade >= 18) && $carterinha == true){
+// 	echo "Maior Idade e carterinha";
+// } else if ($carterinha == false) {
+// 	echo "Maior idade faça carterinha";
+// } else {
+// 	echo "Menor Idade";
+// }
+$a = "Marcos Lucas";
+if ($a == "Lucas") {
+	echo "Olá Lucas";
+} else if ($a == "Marcos"){
+	echo "Olá Marcos";
 } else {
-	echo "Menor Idade";
+	echo "Olá estranho";
 }
 echo "<hr>";
-/*$a = "Jorge";
-
-if ($a=="Lucas") {
-	echo "Ola Lucas";
-} else if ($a=="Marcos"){
-	echo "Ola Marcos";
+$idade = 14;
+// MAior de 18 voto é obrigatório
+// 16 e <18 voto opcional
+// < 16 não vota
+if ($idade >= 18 && $idade < 60) {
+	echo "Voto Obrigatório";
+} else if ($idade >= 16 || $idade >= 60) {
+	echo "Voto Opcional";
+} else if ($idade < 16){
+	echo "Não vota";
 } else {
-	echo "Ola estranho";
-}*/
-
-
-//maior de 18 o voto é obrigatorio
-//16 e < 18 voto opcional
-//<16 não vota
-
-$idade = 16;
-
-if ($idade>=18) {
-	echo "voto obrigatorio";
+	echo "Idade Inválida";
 }
-
-else if ($idade >= 16 && $idade >=60) {
-	echo "voto opcional";
-}
-else if ($idade < 16) {
-	echo "não vota";
-}
-else {
-	echo "Idade Invalida";
+$num = 10;
+// Se o número dividor por 2 e resto da divisão = 0
+// Módulo % -> retorna o resto da divisão
+if ($num % 2 === 0) {
+	echo "Par";
+} else {
+	echo "Impar"
 }
