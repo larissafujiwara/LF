@@ -21,4 +21,13 @@
 	</form>
 </div>
 
+<?php 
+if (!empty($_POST)) {
+ 	$usuario = [
+ 	'usuario'=>$_POST['usuario'],
+ 	'senha'=>$_POST['senha']];
+ 	insereusuario($usuario);
+ 	header("Location:index.php");
+ } ?>
+
 <?php include 'rodape.php' ?>
