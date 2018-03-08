@@ -1,0 +1,35 @@
+sudo apt update (não é sempre) - atualiza repositórios
+sudo apt install postgresql - instala Postgres
+
+sudo su - loga como root
+su postgres - loga como postgres
+psql - abre o postgreSql
+
+CREATE DATABASE aula08; - criar banco de dados
+\l - listar banco de dados
+Q - voltar
+CREATE USER larissa PASSWORD '123'; - criar usuario e senha
+\du - listar usuarios
+ALTER DATABASE aula08 OWNER TO larissa; - alterando dono do banco de dados
+\l
+\q - sair do postgresql
+exit - sair do usuario postgres
+exit - sair do usuario root
+psql -h localhost -U larissa aula08 - entrando no banco aula08 com o usuário larissa no host localhost
+\dt - lista de relações
+
+CREATE TABLE usuarios(
+id SERIAL PRIMARY KEY,
+usuario VARCHAR(255) NOT NULL,
+senha VARCHAR(40) NOT NULL
+);
+
+\d "alguma coisa" - informações da tabela
+
+CREATE TABLE posts(
+id SERIAL PRIMARY KEY,
+usuario_id INT REFERENCES usuarios(id),
+post VARCHAR(140) NOT NULL
+);
+
+ALTER TABLE posts ALTER COLUMN usuario_id SET NOT NULL; - alterar uma coluna como não nulo
