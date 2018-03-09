@@ -1,0 +1,25 @@
+CREATE TABLE tb_alunos(
+id SERIAL PRIMARY KEY,
+nome VARCHAR(255),
+email VARCHAR(100),
+CPF INT NOT NULL,
+RG INT NOT NULL,
+dtNasc DATE
+);
+
+CREATE TABLE tb_cursos(
+id SERIAL PRIMARY KEY,
+nome VARCHAR(255),
+tipo VARCHAR(50),
+cargaHoraria INT,
+requisitos TEXT
+);
+
+CREATE TABLE tb_periodo(
+id SERIAL PRIMARY KEY,
+descricao VARCHAR(255)
+);
+
+CREATE TABLE tb_alunos(
+
+);

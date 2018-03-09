@@ -1,0 +1,8 @@
+sudo su
+su postgres
+psql
+CREATE DATABASE *inserir nome do bd*
+CREATE USER *inserir nome do usuario* PASSWORD '*inserir senha*';
+ALTER DATABASE *nome do bd* OWNER TO *nome do usuario*;
+\q
+psql - localhost -U *nome do usuario* *nome do bd*

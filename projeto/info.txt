@@ -1,0 +1,1 @@
+SERIAL -> identifica como inteiro, não nulo e auto incremento
